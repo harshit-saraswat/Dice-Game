@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Dicee</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
@@ -24,13 +25,23 @@
 
     </div>
 
+    
+
+    <footer>
+      &copy; 2020	Harshit Saraswat
+    </footer>
+
     <script>
-      changeDice('img1');
-      changeDice('img2');
+      const num1=changeDice('img1');
+      const num2=changeDice('img2');
+
+      if(num1>num2){
+        changeTitle(1);
+      }else if(num2>num1){
+        changeTitle(2);
+      }else{
+        changeTitle(0);
+      }
     </script>
   </body>
-
-  <footer>
-    www 🎲 App Brewery 🎲 com
-  </footer>
 </html>
